@@ -1,0 +1,11 @@
+{
+  "output_dir": "${HOME}/recordings",
+  "log_file": "${HOME}/recordings/ethical_assistant.log",
+  "sample_rate": 48000,
+  "channels": 2,
+  "enable_encoding": true,
+  "upload_url": "",
+  "api_key": "",
+  "websocket_url": "ws://localhost:9000",
+  "enable_websocket": false
+}

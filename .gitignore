@@ -1,0 +1,89 @@
+# ========================================
+# BUILD & COMPILED ARTIFACTS (EXCLUDED)
+# ========================================
+# CMake/build artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.o
+*.a
+*.so
+*.dylib
+
+# C++ source code 
+
+src/
+
+# .NET build outputs (but KEEP project files for rebuilding)
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Node.js build outputs (but KEEP package.json for npm install)
+node_modules/
+dist/  # (for JS build output; bundled binaries in build_demo are kept)
+
+# ========================================
+# SECRETS & ENVIRONMENT (CRITICAL)
+# ========================================
+# API Keys and credentials
+appsettings.Development.json
+*.Development.json
+.env
+.env.local
+.env.*.local
+secrets.json
+credential*
+**/test_keys*
+**/api_key*
+**/*token*
+
+# ========================================
+# IDE & EDITOR (LOCAL DEV ONLY)
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ========================================
+# GIT & VERSION CONTROL
+# ========================================
+.git/
+.gitmodules
+*.orig
+
+# ========================================
+# SYSTEM & TEMPORARY FILES
+# ========================================
+*.log
+*.tmp
+*.bak
+**/temp/
+**/tmp/
+
+# ========================================
+# RECORDINGS & RUNTIME DATA (LOCAL USE)
+# ========================================
+recordings/
+*.wav
+*.opus
+*.mp3
+conversation_history.json
+screenshot_*
+
+# ========================================
+# ALLOWED (KEEP FOR CUSTOMER)
+# ========================================
+# Uncomment if git complains about these being ignored:
+# !build_demo/ethical_assistant_demo  (compiled binary - KEEP)
+# !demo_hybrid/RecorderBridge.Api/**/*.cs  (source code - KEEP)
+# !demo_hybrid/recorder-ui/src/**  (source code - KEEP)
+# !dist/  (prebuilt bundles - KEEP)

@@ -1,0 +1,12 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Frontend deps/artifacts
+recorder-ui/node_modules/
+recorder-ui/dist/
+
+# Backend build artifacts
+RecorderBridge.Api/bin/
+RecorderBridge.Api/obj/
